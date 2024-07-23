@@ -1,3 +1,3 @@
-import streamlit as st
-st.write('Hello Streamlit!!')
-st.write('안녕!!')
+import streamlit as st 
+
+st.header('주사위게임', divider='rainbow') 
