@@ -31,6 +31,10 @@ st.session_state.df['학번'] = st.session_state.df['학번'].astype(str).str.re
 
 #버튼처리
 if bt1 :
-   st.session_state.df['합계'] = st.session_state.df.loc[:,['출석','중간','기말','과제']].sum()
+   st.session_state.df['합계'] = st.session_state.df['출석'] + \
+                                 st.session_state.df['중간'] + \
+                                 st.session_state.df['기말'] + \
+                                 st.session_state.df['과제']  
+                                 
 st.dataframe(st.session_state.df)
 
