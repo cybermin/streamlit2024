@@ -27,5 +27,6 @@ with col5:
 
 # 데이터 전처리
 st.session_state.df.fillna(0, inplace=True)
-st.dataframe(st.session_state.df)
 st.session_state.df['학번'] = st.session_state.df['학번'].astype(str).str.replace(',','')
+
+st.dataframe(st.session_state.df)
