@@ -29,4 +29,8 @@ with col5:
 st.session_state.df.fillna(0, inplace=True)
 st.session_state.df['학번'] = st.session_state.df['학번'].astype(str).str.replace(',','')
 
+#버튼처리
+if bt1 :
+   st.session_state.df['합계'] = st.session_state.df.iloc[:,3:7].sum()
 st.dataframe(st.session_state.df)
+
