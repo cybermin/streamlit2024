@@ -19,7 +19,7 @@ if st.session_state['flag'] :
     st.image('./img/what.png')
 else :
     st.subheader('게임중...')
-    usern = st.number_input("1에서 100까지 정수를 입력",'', placeholder="정수입력")
+    usern = st.text_input("1에서 100까지 정수를 입력",'', placeholder="정수입력")
     if usern.isdigit() :
         usern = int(usern)
         if usern > st.session_state.n : 
