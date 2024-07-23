@@ -27,3 +27,4 @@ with col5:
 
 # 데이터 전처리
 st.session_state.df.fillna(0, inplace=True)
+st.dataframe(st.session_state.df)
