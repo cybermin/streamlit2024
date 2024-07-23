@@ -10,11 +10,12 @@ if 'flag' not in st.session_state:
 
 st.header('업다운게임', divider='rainbow') 
 
+def start_game() :
+    st.session_state.flag = False
+    st.session_state.n = random.randint(1,100)
+
 if st.session_state['flag'] :
-    clicked = st.button('게임시작')
-    if clicked :
-        st.session_state.flag = False
-        st.session_state.n = random.randint(1,100)
+    st.button('게임시작', on_click=start_game)
     st.image('./img/what.png')
 else :
     st.subheader('게임중...')
