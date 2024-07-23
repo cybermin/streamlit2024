@@ -6,6 +6,6 @@ clicked = st.button("게임시작")
 
 if clicked :
     n = random.randint(1, 100)
-    print(n)
-
+    
+print(n)
 st.image('./img/what.png')
