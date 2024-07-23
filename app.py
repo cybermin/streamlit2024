@@ -15,7 +15,10 @@ def start_game() :
     st.session_state.n = random.randint(1,100)
 
 if st.session_state['flag'] :
-    st.button('게임시작', on_click=start_game)
+    # st.button('게임시작', on_click=start_game)
+    if st.button('게임시작') :
+        st.session_state.flag = False
+        st.session_state.n = random.randint(1,100) 
     st.image('./img/what.png')
 else :
     st.subheader('게임중...')
