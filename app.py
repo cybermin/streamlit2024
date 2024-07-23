@@ -8,5 +8,5 @@ n = 0
 if clicked :
     n = random.randint(1, 100)
     
-print(n)
+st.write(f'n={n}')
 st.image('./img/what.png')
